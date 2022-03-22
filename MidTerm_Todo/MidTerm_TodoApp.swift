@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct MidTerm_TodoApp: App {
+    
+    @StateObject var listViewModal : ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+            ListView()
+            }
+            .environmentObject(listViewModal)
         }
     }
 }

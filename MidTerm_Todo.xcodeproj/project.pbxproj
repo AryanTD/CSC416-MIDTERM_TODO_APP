@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		3FA1DE7E27EA02EE00C63730 /* MidTerm_TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1DE7D27EA02EE00C63730 /* MidTerm_TodoApp.swift */; };
-		3FA1DE8027EA02EE00C63730 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1DE7F27EA02EE00C63730 /* ContentView.swift */; };
 		3FA1DE8227EA02EF00C63730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1DE8127EA02EF00C63730 /* Assets.xcassets */; };
 		3FA1DE8527EA02EF00C63730 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1DE8427EA02EF00C63730 /* Preview Assets.xcassets */; };
+		3FA1DE8D27EA035000C63730 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1DE8C27EA035000C63730 /* ListView.swift */; };
+		3FA1DE8F27EA043800C63730 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1DE8E27EA043800C63730 /* ListRowView.swift */; };
+		3FA1DE9127EA0C4000C63730 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1DE9027EA0C4000C63730 /* AddView.swift */; };
+		3FA1DE9427EA133900C63730 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1DE9327EA133900C63730 /* ItemModel.swift */; };
+		3FA1DE9727EA177F00C63730 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1DE9627EA177F00C63730 /* ListViewModel.swift */; };
+		3FA1DE9927EA6DB600C63730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA1DE9827EA6DB600C63730 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3FA1DE7A27EA02EE00C63730 /* MidTerm_Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidTerm_Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA1DE7A27EA02EE00C63730 /* THE MIDTERM TODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "THE MIDTERM TODO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA1DE7D27EA02EE00C63730 /* MidTerm_TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidTerm_TodoApp.swift; sourceTree = "<group>"; };
-		3FA1DE7F27EA02EE00C63730 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FA1DE8127EA02EF00C63730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA1DE8427EA02EF00C63730 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FA1DE8C27EA035000C63730 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		3FA1DE8E27EA043800C63730 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		3FA1DE9027EA0C4000C63730 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		3FA1DE9327EA133900C63730 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		3FA1DE9627EA177F00C63730 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		3FA1DE9827EA6DB600C63730 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +53,7 @@
 		3FA1DE7B27EA02EE00C63730 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3FA1DE7A27EA02EE00C63730 /* MidTerm_Todo.app */,
+				3FA1DE7A27EA02EE00C63730 /* THE MIDTERM TODO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				3FA1DE7D27EA02EE00C63730 /* MidTerm_TodoApp.swift */,
-				3FA1DE7F27EA02EE00C63730 /* ContentView.swift */,
+				3FA1DE9227EA132800C63730 /* Models */,
+				3FA1DE9527EA175E00C63730 /* ViewModels */,
+				3FA1DE8B27EA034100C63730 /* Views */,
 				3FA1DE8127EA02EF00C63730 /* Assets.xcassets */,
 				3FA1DE8327EA02EF00C63730 /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				3FA1DE8427EA02EF00C63730 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FA1DE8B27EA034100C63730 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FA1DE9027EA0C4000C63730 /* AddView.swift */,
+				3FA1DE8C27EA035000C63730 /* ListView.swift */,
+				3FA1DE8E27EA043800C63730 /* ListRowView.swift */,
+				3FA1DE9827EA6DB600C63730 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3FA1DE9227EA132800C63730 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FA1DE9327EA133900C63730 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3FA1DE9527EA175E00C63730 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3FA1DE9627EA177F00C63730 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +123,7 @@
 			);
 			name = MidTerm_Todo;
 			productName = MidTerm_Todo;
-			productReference = 3FA1DE7A27EA02EE00C63730 /* MidTerm_Todo.app */;
+			productReference = 3FA1DE7A27EA02EE00C63730 /* THE MIDTERM TODO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA1DE9927EA6DB600C63730 /* LaunchScreen.storyboard in Resources */,
 				3FA1DE8527EA02EF00C63730 /* Preview Assets.xcassets in Resources */,
 				3FA1DE8227EA02EF00C63730 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA1DE8027EA02EE00C63730 /* ContentView.swift in Sources */,
+				3FA1DE9427EA133900C63730 /* ItemModel.swift in Sources */,
+				3FA1DE9127EA0C4000C63730 /* AddView.swift in Sources */,
+				3FA1DE9727EA177F00C63730 /* ListViewModel.swift in Sources */,
 				3FA1DE7E27EA02EE00C63730 /* MidTerm_TodoApp.swift in Sources */,
+				3FA1DE8D27EA035000C63730 /* ListView.swift in Sources */,
+				3FA1DE8F27EA043800C63730 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +316,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -281,7 +325,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.aryanTD.MidTerm-Todo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "THE MIDTERM TODO";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,7 +345,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,7 +354,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.aryanTD.MidTerm-Todo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "THE MIDTERM TODO";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
